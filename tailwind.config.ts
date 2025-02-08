@@ -1,7 +1,7 @@
 import type { Config } from "tailwindcss";
 
 export default {
-  darkMode: "class", 
+  darkMode: "class",
   content: [
     "./pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./components/**/*.{js,ts,jsx,tsx,mdx}",
@@ -26,6 +26,12 @@ export default {
         // light texts
         lightprimaryText: "#000000",
         lightsecondaryText: "#6c757d",
+        // border color 
+        darkBorderColor: "#393939",
+        lightBorderColor: "#E5E5E5",
+        // card borders 
+        darkcardBorderColor: "#5B5B5B",
+        lightcardBorderColor: "#E5E5E5",
       },
     },
   },
