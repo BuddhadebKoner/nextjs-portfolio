@@ -48,8 +48,8 @@ const TwitterCard = () => {
                <Image
                   src={twitterData.avatar_url}
                   alt="Twitter Avatar"
-                  width={120}
-                  height={120}
+                  width={150}
+                  height={150}
                   className="rounded-full object-cover"
                />
                <h1 className="text-lg md:text-xl font-bold text-gray-800 dark:text-gray-200 mt-3">

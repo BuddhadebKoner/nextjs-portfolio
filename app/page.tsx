@@ -1,7 +1,8 @@
 "use client";
 
-import GitHubCard from "./components/GitHubCard";
-import TwitterCard from "./components/TwitterCard";
+import GitHubCard from "../components/shared/GitHubCard";
+import LinkedinCard from "../components/shared/LinkedinCard";
+import TwitterCard from "../components/shared/TwitterCard";
 
 const page = () => {
 
@@ -9,7 +10,9 @@ const page = () => {
     <div className="w-screen h-fit dark:bg-darkprimaryBg bg-lightprimaryBg px-5 md:px-10 lg:px-[20vw] py-10 flex flex-col gap-10">
       {/* github card */}
       <GitHubCard />
-      {/* x card */}
+      {/* linkedin */}
+      <LinkedinCard />
+      {/*tweeter*/}
       <TwitterCard />
     </div>
   )
