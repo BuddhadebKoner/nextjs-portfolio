@@ -59,10 +59,10 @@ const Header = () => {
          <div className="w-full flex flex-wrap justify-center items-center gap-5 pt-4">
             {[
                { name: "Home", path: "/" },
-               { name: "Resume", path: "/Resume" },
-               { name: "Works", path: "/Works" },
-               { name: "Skill", path: "/Skill" },
-               { name: "Post", path: "/Post" },
+               { name: "Resume", path: "/resume" },
+               { name: "Works", path: "/works" },
+               { name: "Skill", path: "/skill" },
+               { name: "Posts", path: "/posts" },
             ].map((link) => (
                <Link
                   key={link.path}
