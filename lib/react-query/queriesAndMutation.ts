@@ -1,4 +1,6 @@
-import { useQuery } from "@tanstack/react-query";
+import { useInfiniteQuery, useQuery } from "@tanstack/react-query";
+import { QUERY_KEYS } from "./queryKeys";
+import { getAllBlogs } from "../api-calls/post-api-calls";
 
 const GITHUB_API_URL = "https://api.github.com/users/BuddhadebKoner";
 
@@ -11,7 +13,22 @@ export const useGetGitHubData = () => {
          if (!res.ok) throw new Error(`GitHub API error: ${res.status}`);
          return res.json();
       },
-      staleTime: 1000 * 60 * 5, // Cache data for 5 minutes
-      refetchOnWindowFocus: false, // Disable refetching when window is focused
+      staleTime: 1000 * 60 * 5,
+      refetchOnWindowFocus: false,
    });
 };
+
+// get all posts 
+export const useGetPosts = () => {
+   return useInfiniteQuery({
+      queryKey: [QUERY_KEYS.GET_POSTS],
+      queryFn: ({ pageParam = 1 }) => getAllBlogs({ pageParam }),
+      getNextPageParam: (lastPage) => {
+         if (lastPage.page >= lastPage.totalPages) return null;
+         return lastPage.page + 1;
+      },
+      staleTime: 1000 * 60 * 5,
+      refetchOnWindowFocus: false,
+      initialPageParam: 1,
+   });
+}

@@ -9,18 +9,20 @@ const PostCard = ({
    title,
    description,
    image,
+   slug,
 }: {
    title: string;
    description: string;
    image: string;
+   slug: string;
 }) => {
 
-   // post link form title 
-   const postLink = `/posts/${title.toLowerCase().split(" ").join("-")}`;
 
    return (
       <CardContainer className="inter-var group">
-         <Link href={postLink} passHref>
+         <Link
+            href={`/posts/${slug}`}
+            passHref>
             <CardBody className="bg-gray-50 relative dark:bg-black border border-black/[0.1] dark:border-white/[0.2] w-auto sm:w-[30rem] h-auto rounded-xl p-6 shadow-md hover:shadow-xl transition-shadow duration-300">
                <CardItem
                   translateZ="50"
@@ -38,7 +40,7 @@ const PostCard = ({
                <CardItem translateZ="100" className="w-full mt-4">
                   <div className="relative">
                      <Image
-                        src={image}
+                        src={image || "/images/placeholder.jpg"}
                         height="1000"
                         width="1000"
                         className="h-60 w-full object-cover rounded-xl"
