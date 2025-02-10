@@ -39,7 +39,7 @@ const Header = () => {
 
             <button
                onClick={toggleDarkMode}
-               className="w-fit h-fit fixed right-14 flex justify-center items-center text-gray-700 dark:text-gray-300 focus:outline-none transition-transform duration-300 ease-in-out"
+               className="w-fit h-fit fixed right-14 flex justify-center items-center text-gray-700 dark:text-gray-300 focus:outline-none transition-transform duration-300 ease-in-out z-50"
             >
                <span
                   className={`text-2xl inline-block transition-transform duration-300 ${isDarkMode ? "rotate-[270deg]" : "rotate-[90deg]"

@@ -2,7 +2,6 @@
 
 import Image from 'next/image';
 import Link from 'next/link';
-import { motion } from "framer-motion";
 import { LinkPreview } from "@/components/ui/link-preview";
 
 const demoProjects = [
@@ -30,7 +29,7 @@ const demoProjects = [
 
 const LinkedinCard = () => {
    return (
-      <div className="w-full overflow-hidden min-h-[50rem] lg:min-h-[30rem] flex flex-col border border-gray-300 dark:border-gray-700 bg-white dark:bg-gray-900 rounded-xl p-6 gap-6 shadow-lg">
+      <div className="w-full overflow-hidden min-h-[50rem] lg:min-h-[30rem] flex flex-col border border-blue-200 dark:border-blue-700 bg-white dark:bg-[#183049] rounded-xl p-6 gap-6 shadow-lg">
          <div className="w-full flex flex-col md:flex-row gap-8">
             {/* Profile Section */}
             <div className="w-full md:w-1/3 flex flex-col items-center">
@@ -46,7 +45,7 @@ const LinkedinCard = () => {
                   Buddhadeb Koner
                </h1>
 
-               <p className="text-sm text-gray-700 dark:text-gray-300 text-center mt-2">
+               <p className="text-sm text-gray-700 dark:text-gray-200 text-center mt-2">
                   SDE 0 | Tech Lead at CodeComm <br /> Web Developer at RajisLab <br /> NEXT.js | SETGOI CSE-26
                </p>
 
@@ -77,7 +76,7 @@ const LinkedinCard = () => {
             <div className="flex flex-col w-full md:w-2/3 space-y-6">
                <div>
                   <h2 className="text-lg font-semibold text-gray-900 dark:text-white">About Me</h2>
-                  <p className="text-sm text-gray-700 dark:text-gray-300 mt-1">
+                  <p className="text-sm text-gray-700 dark:text-gray-200 mt-1">
                      I'm a passionate web developer focused on building intuitive and high-performance applications.
                      Specializing in Next.js and Appwrite, I turn complex ideas into seamless digital experiences.
                      Always eager to learn, share, and innovate.
@@ -86,13 +85,13 @@ const LinkedinCard = () => {
 
                <div>
                   <h2 className="text-lg font-semibold text-gray-900 dark:text-white">Experience</h2>
-                  <p className="text-sm text-gray-700 dark:text-gray-300 mt-1">🔹 Tech Lead at CodeComm</p>
-                  <p className="text-sm text-gray-700 dark:text-gray-300">🔹 Web Developer at RajisLab</p>
+                  <p className="text-sm text-gray-700 dark:text-gray-200 mt-1">🔹 Tech Lead at CodeComm</p>
+                  <p className="text-sm text-gray-700 dark:text-gray-200">🔹 Web Developer at RajisLab</p>
                </div>
 
                <div>
                   <h2 className="text-lg font-semibold text-gray-900 dark:text-white">Education</h2>
-                  <p className="text-sm text-gray-700 dark:text-gray-300 mt-1">Sanaka Educational Trust's Group of Institutions</p>
+                  <p className="text-sm text-gray-700 dark:text-gray-200 mt-1">Sanaka Educational Trust's Group of Institutions</p>
                </div>
 
                <div>
@@ -109,7 +108,7 @@ const LinkedinCard = () => {
             <h2 className="text-lg font-semibold text-gray-900 dark:text-white">Current Projects</h2>
             <div className="mt-2 flex flex-col gap-3">
                {demoProjects.map((project) => (
-                  <div key={project.id} className="border border-gray-300 dark:border-gray-700 p-4 rounded-lg shadow-md bg-gray-100 dark:bg-gray-800">
+                  <div key={project.id} className="border border-blue-200 dark:border-blue-700 p-4 rounded-lg shadow-md bg-blue-50 dark:bg-[#1a2d41]">
                      <div className="flex items-center gap-3">
                      </div>
                      <LinkPreview
@@ -117,19 +116,19 @@ const LinkedinCard = () => {
                         className="text-md font-semibold text-gray-900 dark:text-white mt-2">
                         {project.name}
                      </LinkPreview>
-                     <p className="text-sm text-gray-800 dark:text-gray-300">{project.description}</p>
+                     <p className="text-sm text-gray-800 dark:text-gray-200">{project.description}</p>
 
                      <div className="flex flex-wrap gap-2 mt-2">
                         {project.techStack.map((tech, index) => (
-                           <span key={index} className="text-xs bg-gray-200 dark:bg-gray-700 px-2 py-1 rounded-md">
+                           <span key={index} className="text-xs bg-blue-100 dark:bg-blue-700 px-2 py-1 rounded-md">
                               {tech}
                            </span>
                         ))}
                      </div>
 
-                     <div className="flex justify-between text-xs text-gray-600 dark:text-gray-400 mt-3">
+                     <div className="flex justify-between text-xs text-gray-600 dark:text-gray-300 mt-3">
                         <p>{new Date(project.timestamp).toLocaleDateString("en-IN", { month: "long", day: "numeric", year: "numeric" })}</p>
-                        <a href={project.projectUrl} target="_blank" rel="noopener noreferrer" className="text-blue-500 hover:underline">
+                        <a href={project.projectUrl} target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">
                            Visit Project
                         </a>
                      </div>

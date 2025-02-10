@@ -12,6 +12,9 @@ const nextConfig: NextConfig = {
       { protocol: 'https', hostname: 'pbs.twimg.com' },
       { protocol: 'https', hostname: 'media.licdn.com' },
       { protocol: 'https', hostname: 'skillicons.dev' },
+      { protocol: 'https', hostname: 'aceternity.com' },
+      { protocol: 'https', hostname: 'via.placeholder.com' },
+      { protocol: 'https', hostname: 'instagram.fccu19-1.fna.fbcdn.net' },
     ],
     domains: [
       "api.microlink.io", // Microlink Image Preview

@@ -1,5 +1,6 @@
 "use client";
 
+import InstaCard from "@/components/shared/InstaCard";
 import GitHubCard from "../components/shared/GitHubCard";
 import LinkedinCard from "../components/shared/LinkedinCard";
 import TwitterCard from "../components/shared/TwitterCard";
@@ -14,6 +15,8 @@ const page = () => {
       <LinkedinCard />
       {/*tweeter*/}
       <TwitterCard />
+      {/* insta card */}
+      <InstaCard />
     </div>
   )
 }

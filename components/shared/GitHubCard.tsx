@@ -59,9 +59,8 @@ const GitHubCard = () => {
    const { data: githubData, isError, error } = useGetGitHubData();
    if (isError) return <p>Error: {(error as Error).message}</p>;
 
-
    return (
-      <div className="w-full h-fit flex flex-col border-2 border-lightBorderColor dark:border-darkBorderColor bg-lightsecondaryBg dark:bg-darksecondaryBg rounded-lg p-5 gap-2">
+      <div className="w-full h-fit flex flex-col border-2 border-gray-300 dark:border-gray-700 bg-white dark:bg-[#24292e] rounded-lg p-5 gap-2">
          {error ? (
             <div className="w-full flex flex-col items-center text-center text-red-500">
                <p className="text-lg font-semibold">Failed to load GitHub data.</p>
@@ -80,11 +79,11 @@ const GitHubCard = () => {
                         className="rounded-full"
                      />
 
-                     <h1 className="text-lg md:text-xl font-bold text-gray-800 dark:text-gray-200 mt-3">
+                     <h1 className="text-lg md:text-xl font-bold text-gray-900 dark:text-white mt-3">
                         {githubData?.name || "Full Name"}
                      </h1>
 
-                     <p className="text-sm md:text-base text-gray-600 dark:text-gray-300">
+                     <p className="text-sm md:text-base text-gray-700 dark:text-gray-300">
                         @{githubData?.login || "username"} {" . "} he/him
                      </p>
 
@@ -93,7 +92,7 @@ const GitHubCard = () => {
                            href={githubData?.html_url}
                            target="_blank"
                            rel="noopener noreferrer"
-                           className="bg-blue-500 text-white px-4 py-2 rounded-md transition-transform hover:scale-105"
+                           className="bg-[#2ea44f] text-white px-4 py-2 rounded-md transition-transform hover:scale-105"
                         >
                            Follow
                         </a>
@@ -110,12 +109,14 @@ const GitHubCard = () => {
                      <div className="flex mt-3 gap-5">
                         <Link
                            href={"https://github.com/BuddhadebKoner?tab=followers"}
-                           className="text-sm text-gray-600 dark:text-gray-300">
+                           className="text-sm text-gray-700 dark:text-gray-300"
+                        >
                            {githubData?.followers} followers
                         </Link>
                         <Link
                            href={"https://github.com/BuddhadebKoner?tab=following"}
-                           className="text-sm text-gray-600 dark:text-gray-300">
+                           className="text-sm text-gray-700 dark:text-gray-300"
+                        >
                            {githubData?.following} following
                         </Link>
                      </div>
@@ -123,7 +124,7 @@ const GitHubCard = () => {
 
                   {/* Repositories Section */}
                   <div className="w-full md:w-2/3 mt-5 md:mt-0 flex flex-col gap-4">
-                     <h2 className="text-lg md:text-xl font-semibold text-gray-800 dark:text-gray-200">
+                     <h2 className="text-lg md:text-xl font-semibold text-gray-900 dark:text-white">
                         ⭐ Top Repositories
                      </h2>
 
@@ -134,12 +135,12 @@ const GitHubCard = () => {
                               href={repo.html_url}
                               target="_blank"
                               rel="noopener noreferrer"
-                              className="border p-4 dark:border-darkcardBorderColor border-lightcardBorderColor rounded-lg shadow-md hover:shadow-xl transition-transform hover:scale-105 bg-lightprimaryBg dark:bg-darkprimaryBg"
+                              className="border p-4 dark:border-gray-700 border-gray-300 rounded-lg shadow-md hover:shadow-xl transition-transform hover:scale-105 bg-white dark:bg-[#24292e]"
                            >
-                              <h3 className="text-md font-semibold text-gray-800 dark:text-gray-200">
+                              <h3 className="text-md font-semibold text-gray-900 dark:text-white">
                                  {repo.name}
                               </h3>
-                              <p className="text-xs text-gray-600 dark:text-gray-400 mt-1">
+                              <p className="text-xs text-gray-700 dark:text-gray-300 mt-1">
                                  ⭐ {repo.stargazers_count} | 🍴 {repo.forks_count}
                               </p>
                            </a>
@@ -150,11 +151,11 @@ const GitHubCard = () => {
 
                {/* Contribution Chart */}
                <div className="w-full mt-5">
-                  <h1 className="text-lg md:text-xl font-semibold text-gray-800 dark:text-gray-200">
+                  <h1 className="text-lg md:text-xl font-semibold text-gray-900 dark:text-white">
                      898 contributions in 2024
                   </h1>
                   <Image
-                     className="w-full max-w-full rounded-md p-5 bg-white"
+                     className="w-full max-w-full rounded-md p-5 bg-white dark:bg-[#24292e]"
                      src="/2024-github-chat.png"
                      alt="Buddhadeb Koner's GitHub chart"
                      width={800}
@@ -164,7 +165,6 @@ const GitHubCard = () => {
             </>
          )}
       </div>
-
    );
 };
 
