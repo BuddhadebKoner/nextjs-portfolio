@@ -6,7 +6,7 @@ export interface IPost {
    image: string;
    link: string;
    profilelink: string;
-   mediaIcon: string;
+   
    postdate: string;
 }
 
@@ -16,7 +16,6 @@ const PostSchema = new mongoose.Schema<IPost>({
    image: { type: String, required: true },
    link: { type: String, required: true },
    profilelink: { type: String, required: true },
-   mediaIcon: { type: String, required: true },
    postdate: { type: String, required: true },
 }, { timestamps: true });
 

@@ -32,8 +32,8 @@ const Header = () => {
 
    return (
       <div className="w-screen min-h-fit bg-lightprimaryBg dark:bg-darkprimaryBg">
-         <div className="w-full flex justify-center items-center h-fit py-10 relative">
-            <h1 className="font-semibold text-4xl text-lightprimaryText dark:text-darkprimaryText">
+         <div className="w-full flex justify-center items-center h-fit py-6 sm:py-8 md:py-10 relative">
+            <h1 className="font-semibold text-2xl sm:text-3xl md:text-4xl text-lightprimaryText dark:text-darkprimaryText">
                Buddhadeb Koner
             </h1>
 
@@ -42,12 +42,12 @@ const Header = () => {
                className="w-fit h-fit fixed right-14 flex justify-center items-center text-gray-700 dark:text-gray-300 focus:outline-none transition-transform duration-300 ease-in-out z-50"
             >
                <span
-                  className={`text-2xl inline-block transition-transform duration-300 ${isDarkMode ? "rotate-[270deg]" : "rotate-[90deg]"
+                  className={`text-xl sm:text-2xl inline-block transition-transform duration-300 ${isDarkMode ? "rotate-[270deg]" : "rotate-[90deg]"
                      }`}
                >
                   <Image
-                     width={40}
-                     height={40}
+                     width={32}
+                     height={32}
                      src={isDarkMode ? "/icons/dark_mode.svg" : "/icons/light_mode.svg"}
                      alt={isDarkMode ? "moon" : "sun"}
                   />
@@ -67,7 +67,7 @@ const Header = () => {
                <Link
                   key={link.path}
                   href={link.path}
-                  className={`font-medium text-xl px-4 py-2 rounded-t-lg transition-all ${pathname === link.path
+                  className={`font-medium text-base sm:text-lg md:text-xl px-4 py-2 rounded-t-lg transition-all ${pathname === link.path
                      ? "bg-[#333] dark:bg-black text-white"
                      : "text-lightprimaryText dark:text-darkprimaryText"
                      }`}

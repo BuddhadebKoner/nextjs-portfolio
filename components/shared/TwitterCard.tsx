@@ -14,7 +14,7 @@ type TwitterData = {
 };
 
 const twitterData: TwitterData = {
-   avatar_url: '/profiles/x.jpg',
+   avatar_url: 'https://res.cloudinary.com/dsfztnp9x/image/upload/v1739302988/next-portfolio/profiles/w45gm8ef5kpimuxueirz.jpg',
    name: 'Buddhadeb Koner',
    username: 'buddhadeb_koner',
    profile_url: 'https://x.com/buddhadeb_koner',
@@ -26,45 +26,6 @@ const twitterData: TwitterData = {
 const hardcodedTweets = [
    {
       id: 1,
-      user: {
-         name: 'Buddhadeb Koner',
-         handle: '@buddhadeb_koner',
-      },
-      content:
-         "Caffeine for my code, beats for my brain, and a plant to remind me I'm still alive. 🌱☕💻🎶 If bugs had a fear, it’d be me. ",
-      timestamp: '2025-02-07T10:00:00Z',
-      replies: 12,
-      retweets: 25,
-      likes: 150,
-   },
-   {
-      id: 2,
-      user: {
-         name: 'Buddhadeb Koner',
-         handle: '@buddhadeb_koner',
-      },
-      content:
-         "Caffeine for my code, beats for my brain, and a plant to remind me I'm still alive. 🌱☕💻🎶 If bugs had a fear, it’d be me. ",
-      timestamp: '2025-02-07T10:00:00Z',
-      replies: 12,
-      retweets: 25,
-      likes: 150,
-   },
-   {
-      id: 3,
-      user: {
-         name: 'Buddhadeb Koner',
-         handle: '@buddhadeb_koner',
-      },
-      content:
-         "Caffeine for my code, beats for my brain, and a plant to remind me I'm still alive. 🌱☕💻🎶 If bugs had a fear, it’d be me. ",
-      timestamp: '2025-02-07T10:00:00Z',
-      replies: 12,
-      retweets: 25,
-      likes: 150,
-   },
-   {
-      id: 4,
       user: {
          name: 'Buddhadeb Koner',
          handle: '@buddhadeb_koner',

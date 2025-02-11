@@ -11,7 +11,6 @@ export async function POST(req: NextRequest) {
          image,
          link,
          profilelink,
-         mediaIcon,
          postdate,
          secritKey
       } = await req.json();
@@ -23,7 +22,7 @@ export async function POST(req: NextRequest) {
          )
       }
 
-      if (!title || !description || !image || !link || !profilelink || !mediaIcon || !postdate) {
+      if (!title || !description || !image || !link || !profilelink || !postdate) {
          return NextResponse.json(
             { message: "All fields are required" },
             { status: 400 }
@@ -38,7 +37,6 @@ export async function POST(req: NextRequest) {
          image,
          link,
          profilelink,
-         mediaIcon,
          postdate,
        });
 

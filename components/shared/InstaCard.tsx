@@ -15,8 +15,7 @@ type InstagramData = {
 };
 
 const instagramData: InstagramData = {
-   avatar_url:
-      "https://instagram.fccu19-1.fna.fbcdn.net/v/t51.2885-19/472158728_1376410446655424_8198026343894656301_n.jpg?_nc_ht=instagram.fccu19-1.fna.fbcdn.net&_nc_cat=108&_nc_oc=Q6cZ2AGlOdbshyRYYD671fQ1Uts5WU-pOklWCG1asEH1cBnkdbZkr_nSWIdqcGrOkRx36uA&_nc_ohc=8q5ZOhaanX8Q7kNvgGcRdWO&_nc_gid=6a8549374c9a4f95a9a0ba406bce951a&edm=APoiHPcBAAAA&ccb=7-5&oh=00_AYCNS1yi8baoEv2IoKTxCHVYy0_e4v5o4CMOztS0v675zA&oe=67AF533E&_nc_sid=22de04",
+   avatar_url: "/profiles/insta.jpg",
    name: "Buddhadeb Koner",
    username: "buddhadeb_koner",
    profile_url: "https://www.instagram.com/buddhadeb_koner/",
@@ -27,21 +26,11 @@ const instagramData: InstagramData = {
 
 const hardcodedPosts = [
    {
-      id: 1,
-      image_url:
-         "https://res.cloudinary.com/dsfztnp9x/image/upload/v1739285471/next-portfolio/otl2olxxc36kfsbidj7d.png",
-      caption: "A glimpse of my day.",
-      timestamp: "2025-02-07T10:00:00Z",
-      postLink: "https://www.instagram.com/p/C4fsnDio3Nx/",
-      likes: 120,
-      comments: 15,
-   },
-   {
       id: 2,
       image_url:
          "https://res.cloudinary.com/dsfztnp9x/image/upload/v1739285469/next-portfolio/xyxj8fdggwypdx2bwdnp.png",
       caption: "Exploring new horizons.",
-      timestamp: "2025-02-06T14:30:00Z",
+      timestamp: "2024-11-15T14:30:00Z",
       postLink: "https://www.instagram.com/p/DCZswTdzxnV/",
       likes: 95,
       comments: 20,
@@ -51,8 +40,8 @@ const hardcodedPosts = [
       image_url:
          "https://res.cloudinary.com/dsfztnp9x/image/upload/v1739285452/next-portfolio/ntuasgjzwygk9ntvwlgi.png",
       caption: "Life in colors.",
-      timestamp: "2025-02-05T09:15:00Z",
-      postLink: "https://www.instagram.com/p/DByOW6KzpaS/",
+      timestamp: "2023-05-20T09:15:00Z",
+      postLink: "https://www.instagram.com/p/CseBDlsI9N4/",
       likes: 180,
       comments: 25,
    },

@@ -7,23 +7,13 @@ import { LinkPreview } from "@/components/ui/link-preview";
 const demoProjects = [
    {
       id: 1,
-      name: "NextGen",
+      name: "Ur Buddhadeb",
       author: "Buddhadeb Koner",
       username: "@buddhadeb_koner",
-      description: "A futuristic web application connecting developers with clients seamlessly.",
-      techStack: ["React", "Node.js", "MongoDB"],
-      projectUrl: "https://nextgen.dev",
-      timestamp: "2025-02-07T10:00:00Z",
-   },
-   {
-      id: 2,
-      name: "Duolingo Clone",
-      author: "Buddhadeb Koner",
-      username: "@buddhadeb_koner",
-      description: "A language learning app built using JavaScript and modern web technologies.",
-      techStack: ["JavaScript", "Express", "MongoDB"],
-      projectUrl: "https://duoclone.dev",
-      timestamp: "2025-01-20T08:30:00Z",
+      description: "Saas Website for Personal Branding and Portfolio Building.",
+      techStack: ["Next Js"],
+      projectUrl: "https://ur-buddhadeb.vercel.app/",
+      timestamp: "2024-12-28T10:00:00Z",
    },
 ];
 
@@ -34,7 +24,7 @@ const LinkedinCard = () => {
             {/* Profile Section */}
             <div className="w-full md:w-1/3 flex flex-col items-center">
                <Image
-                  src="/profiles/linkedin.jpeg"
+                  src="https://res.cloudinary.com/dsfztnp9x/image/upload/v1739302988/next-portfolio/profiles/bzpgx5rofastkhe842vn.jpg"
                   alt="Buddhadeb Koner"
                   width={150}
                   height={150}

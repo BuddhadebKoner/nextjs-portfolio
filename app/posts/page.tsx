@@ -51,7 +51,6 @@ export default function Page() {
               image={post?.image}
               link={post?.link}
               profilelink={post?.profilelink}
-              mediaIcon={post?.mediaIcon}
               postdate={post?.postdate}
             />
           ))}

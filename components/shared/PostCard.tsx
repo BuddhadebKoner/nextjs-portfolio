@@ -11,7 +11,6 @@ const PostCard = ({
    image,
    link,
    profilelink,
-   mediaIcon,
    postdate,
 }: {
    title: string;
@@ -19,7 +18,6 @@ const PostCard = ({
    image: string;
    link: string;
    profilelink: string;
-   mediaIcon: string;
    postdate: string;
 }) => {
    const handleCardClick = () => {
@@ -47,7 +45,7 @@ const PostCard = ({
                <CardItem translateZ="100" className="w-full mt-4">
                   <div className="relative">
                      <Image
-                        src={image || "/images/placeholder.jpg"}
+                        src={image || '/default-avatar.jpg'}
                         height="1000"
                         width="1000"
                         className="h-60 w-full object-cover rounded-xl"
@@ -71,13 +69,6 @@ const PostCard = ({
                      onClick={(e) => e.stopPropagation()}
                      className="flex items-center gap-1"
                   >
-                     <Image
-                        src={mediaIcon}
-                        alt="media icon"
-                        width={20}
-                        height={20}
-                        className="rounded-full"
-                     />
                      <span className="text-xs text-blue-500 dark:text-blue-400">
                         Profile
                      </span>

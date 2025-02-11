@@ -13,45 +13,24 @@ type RepoData = {
 const hardcodedRepos: RepoData[] = [
    {
       id: 1,
-      name: "Rajis-Lab",
-      html_url: "https://github.com/BuddhadebKoner/Rajis-Lab",
-      stargazers_count: 50,
-      forks_count: 10,
+      name: "ur-buddhadeb",
+      html_url: "https://github.com/BuddhadebKoner/ur-buddhadeb",
+      stargazers_count: 0,
+      forks_count: 0,
    },
    {
       id: 2,
-      name: "ur-buddhadeb",
-      html_url: "https://github.com/BuddhadebKoner/ur-buddhadeb",
-      stargazers_count: 35,
-      forks_count: 8,
+      name: "qrAttender.com",
+      html_url: "https://github.com/BuddhadebKoner/qrAttender.com",
+      stargazers_count: 42,
+      forks_count: 15,
    },
    {
       id: 3,
-      name: "qrAttender.com",
-      html_url: "https://github.com/BuddhadebKoner/qrAttender.com",
-      stargazers_count: 42,
-      forks_count: 15,
-   },
-   {
-      id: 4,
-      name: "kochugram.com",
+      name: "Kochu Media",
       html_url: "https://github.com/BuddhadebKoner/kochugram.com",
-      stargazers_count: 42,
-      forks_count: 15,
-   },
-   {
-      id: 5,
-      name: "qrAttender.com",
-      html_url: "https://github.com/BuddhadebKoner/qrAttender.com",
-      stargazers_count: 42,
-      forks_count: 15,
-   },
-   {
-      id: 6,
-      name: "kochugram.com",
-      html_url: "https://github.com/BuddhadebKoner/kochugram.com",
-      stargazers_count: 42,
-      forks_count: 15,
+      stargazers_count: 0,
+      forks_count: 1,
    },
 ];
 
@@ -72,7 +51,7 @@ const GitHubCard = () => {
                   {/* Profile Section */}
                   <div className="w-full md:w-fit flex flex-col items-center">
                      <Image
-                        src={githubData?.avatar_url || "/default-avatar.png"}
+                        src={githubData?.avatar_url || "/default-avatar.jpg"}
                         alt="GitHub Avatar"
                         width={150}
                         height={150}
