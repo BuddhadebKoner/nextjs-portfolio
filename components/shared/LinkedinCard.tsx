@@ -77,7 +77,7 @@ const LinkedinCard = () => {
                <div>
                   <h2 className="text-lg font-semibold text-gray-900 dark:text-white">About Me</h2>
                   <p className="text-sm text-gray-700 dark:text-gray-200 mt-1">
-                     I'm a passionate web developer focused on building intuitive and high-performance applications.
+                     I&apos;m a passionate web developer focused on building intuitive and high-performance applications.
                      Specializing in Next.js and Appwrite, I turn complex ideas into seamless digital experiences.
                      Always eager to learn, share, and innovate.
                   </p>
@@ -91,13 +91,16 @@ const LinkedinCard = () => {
 
                <div>
                   <h2 className="text-lg font-semibold text-gray-900 dark:text-white">Education</h2>
-                  <p className="text-sm text-gray-700 dark:text-gray-200 mt-1">Sanaka Educational Trust's Group of Institutions</p>
+                  <p className="text-sm text-gray-700 dark:text-gray-200 mt-1">Sanaka Educational Trust&apos;s Group of Institutions</p>
                </div>
 
                <div>
                   <h2 className="text-lg font-semibold text-gray-900 dark:text-white">Skills</h2>
                   <div className="flex mt-2">
-                     <img src="https://skillicons.dev/icons?i=javascript,typescript,cpp,java,appwrite,react,nodejs,expressjs,nextjs,mongo,npm,bun" alt="skill-icons" />
+                     <img
+                        src="https://skillicons.dev/icons?i=javascript,typescript,cpp,java,appwrite,react,nodejs,expressjs,nextjs,mongo,npm,bun"
+                        alt="React"
+                     />
                   </div>
                </div>
             </div>

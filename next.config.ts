@@ -16,9 +16,12 @@ const nextConfig: NextConfig = {
       { protocol: 'https', hostname: 'via.placeholder.com' },
       { protocol: 'https', hostname: 'instagram.fccu19-1.fna.fbcdn.net' },
       { protocol: 'https', hostname: 'images.unsplash.com' },
+      { protocol: 'https', hostname: 'res.cloudinary.com' },
+      { protocol: 'https', hostname: 'brandlogos.net' },
     ],
     domains: [
-      "api.microlink.io", // Microlink Image Preview
+      "api.microlink.io",
+      "skillicons.dev"
     ],
   },
 };

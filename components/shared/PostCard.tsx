@@ -9,21 +9,28 @@ const PostCard = ({
    title,
    description,
    image,
-   slug,
+   link,
+   profilelink,
+   mediaIcon,
+   postdate,
 }: {
    title: string;
    description: string;
    image: string;
-   slug: string;
+   link: string;
+   profilelink: string;
+   mediaIcon: string;
+   postdate: string;
 }) => {
-
+   const handleCardClick = () => {
+      window.open(link, "_blank");
+   };
 
    return (
       <CardContainer className="inter-var group">
-         <Link
-            href={`/posts/${slug}`}
-            passHref>
-            <CardBody className="bg-gray-50 relative dark:bg-black border border-black/[0.1] dark:border-white/[0.2] w-auto sm:w-[30rem] h-auto rounded-xl p-6 shadow-md hover:shadow-xl transition-shadow duration-300">
+         <span onClick={handleCardClick}>
+            <CardBody
+               className="bg-gray-50 relative dark:bg-black border border-black/[0.1] dark:border-white/[0.2] w-auto sm:w-[30rem] h-auto rounded-xl p-6 shadow-md hover:shadow-xl transition-shadow duration-300 cursor-pointer">
                <CardItem
                   translateZ="50"
                   className="text-xl font-bold text-neutral-600 dark:text-white"
@@ -53,8 +60,31 @@ const PostCard = ({
                      </div>
                   </div>
                </CardItem>
+               <CardItem translateZ="120" className="mt-4 flex justify-between items-center">
+                  <span className="text-xs text-gray-500 dark:text-gray-400">
+                     {postdate}
+                  </span>
+                  <Link
+                     href={profilelink}
+                     target="_blank"
+                     rel="noopener noreferrer"
+                     onClick={(e) => e.stopPropagation()}
+                     className="flex items-center gap-1"
+                  >
+                     <Image
+                        src={mediaIcon}
+                        alt="media icon"
+                        width={20}
+                        height={20}
+                        className="rounded-full"
+                     />
+                     <span className="text-xs text-blue-500 dark:text-blue-400">
+                        Profile
+                     </span>
+                  </Link>
+               </CardItem>
             </CardBody>
-         </Link>
+         </span>
       </CardContainer>
    );
 };

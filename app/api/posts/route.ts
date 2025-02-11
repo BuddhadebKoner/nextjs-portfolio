@@ -5,7 +5,16 @@ import { NextRequest, NextResponse } from "next/server";
 // post one post 
 export async function POST(req: NextRequest) {
    try {
-      const { title, description, image, slag, secritKey } = await req.json();
+      const {
+         title,
+         description,
+         image,
+         link,
+         profilelink,
+         mediaIcon,
+         postdate,
+         secritKey
+      } = await req.json();
 
       if (secritKey !== process.env.SECRET_KEY) {
          return NextResponse.json(
@@ -14,7 +23,7 @@ export async function POST(req: NextRequest) {
          )
       }
 
-      if (!title || !description || !image || !slag) {
+      if (!title || !description || !image || !link || !profilelink || !mediaIcon || !postdate) {
          return NextResponse.json(
             { message: "All fields are required" },
             { status: 400 }
@@ -23,23 +32,22 @@ export async function POST(req: NextRequest) {
 
       await connectToDatabase();
 
-      // check the slag is already exist
-      const post = await Post.findOne({ slag });
-      if (post) {
-         return NextResponse.json(
-            { message: "Post already exist" },
-            { status: 400 }
-         )
-      }
-
-      await Post.create({ title, description, image, slag });
+      await Post.create({
+         title,
+         description,
+         image,
+         link,
+         profilelink,
+         mediaIcon,
+         postdate,
+       });
 
       return NextResponse.json(
          { message: "Post created successfully" },
          { status: 201 }
       )
 
-   } catch (error) {
+   } catch {
       return NextResponse.json(
          { message: "Internal server error" },
          { status: 500 }
@@ -70,7 +78,7 @@ export async function GET(req: NextRequest) {
          { status: 200 }
       );
 
-   } catch (error) {
+   } catch {
       return NextResponse.json(
          { message: "Internal server error" },
          { status: 500 }
