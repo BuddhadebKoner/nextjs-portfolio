@@ -14,7 +14,7 @@ type TwitterData = {
 };
 
 const twitterData: TwitterData = {
-   avatar_url: 'https://pbs.twimg.com/profile_images/1881337430222979072/lnNXS6CV_400x400.jpg',
+   avatar_url: '/profiles/x.jpg',
    name: 'Buddhadeb Koner',
    username: 'buddhadeb_koner',
    profile_url: 'https://x.com/buddhadeb_koner',

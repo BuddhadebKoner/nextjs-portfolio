@@ -34,7 +34,7 @@ const LinkedinCard = () => {
             {/* Profile Section */}
             <div className="w-full md:w-1/3 flex flex-col items-center">
                <Image
-                  src="https://media.licdn.com/dms/image/v2/D5603AQFvBnHtlMGOXw/profile-displayphoto-shrink_800_800/B56ZQ8puB3GsAc-/0/1736184358184?e=1744848000&v=beta&t=WvVtNt6PPwm-JJF2ecqVCsYcTQs5mOxIHSQXYgTlYLM"
+                  src="/profiles/linkedin.jpeg"
                   alt="Buddhadeb Koner"
                   width={150}
                   height={150}
@@ -94,15 +94,18 @@ const LinkedinCard = () => {
                   <p className="text-sm text-gray-700 dark:text-gray-200 mt-1">Sanaka Educational Trust&apos;s Group of Institutions</p>
                </div>
 
-               <div>
-                  <h2 className="text-lg font-semibold text-gray-900 dark:text-white">Skills</h2>
-                  <div className="flex mt-2">
-                     <img
-                        src="https://skillicons.dev/icons?i=javascript,typescript,cpp,java,appwrite,react,nodejs,expressjs,nextjs,mongo,npm,bun"
-                        alt="React"
-                     />
+                  <div>
+                    <h2 className="text-lg font-semibold text-gray-900 dark:text-white">Skills</h2>
+                    <div className="flex mt-2">
+                      <Image
+                        width={200}
+                        height={80}
+                        className='w-fit h-fit'
+                        src="https://skillicons.dev/icons?i=javascript,typescript,cpp,java,appwrite,react,nodejs,express,nextjs,mongo,npm,bun"
+                        alt="Skills"
+                      />
+                    </div>
                   </div>
-               </div>
             </div>
          </div>
 

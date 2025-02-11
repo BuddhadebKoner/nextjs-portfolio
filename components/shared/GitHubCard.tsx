@@ -156,7 +156,7 @@ const GitHubCard = () => {
                   </h1>
                   <Image
                      className="w-full max-w-full rounded-md p-5 bg-white dark:bg-[#24292e]"
-                     src="/2024-github-chat.png"
+                     src="https://res.cloudinary.com/dsfztnp9x/image/upload/v1739285718/next-portfolio/a1d6ys2ck4drsggz5p43.png"
                      alt="Buddhadeb Koner's GitHub chart"
                      width={800}
                      height={200}

@@ -1,11 +1,6 @@
-import type { NextConfig } from "next";
-
-const nextConfig: NextConfig = {
-  /* config options here */
+/** @type {import('next').NextConfig} */
+const nextConfig = {
   images: {
-    // avatars.githubusercontent.com
-    // https://ghchart.rshah.org/BuddhadebKoner
-    // https://pbs.twimg.com/profile_images/1881337430222979072/lnNXS6CV_400x400.jpg
     remotePatterns: [
       { protocol: 'https', hostname: 'avatars.githubusercontent.com' },
       { protocol: 'https', hostname: 'ghchart.rshah.org' },
@@ -16,14 +11,19 @@ const nextConfig: NextConfig = {
       { protocol: 'https', hostname: 'via.placeholder.com' },
       { protocol: 'https', hostname: 'instagram.fccu19-1.fna.fbcdn.net' },
       { protocol: 'https', hostname: 'images.unsplash.com' },
-      { protocol: 'https', hostname: 'res.cloudinary.com' },
       { protocol: 'https', hostname: 'brandlogos.net' },
+      { protocol: 'https', hostname: 'i.ibb.co' },
+      { protocol: 'https', hostname: 'cdn.sstatic.net' },
+      { protocol: 'https', hostname: 'res.cloudinary.com' },
     ],
     domains: [
       "api.microlink.io",
-      "skillicons.dev"
+      "skillicons.dev",
+      "instagram.fccu19-1.fna.fbcdn.net",
+      "res.cloudinary.com",
     ],
+    dangerouslyAllowSVG: true,
   },
 };
 
-export default nextConfig;
+module.exports = nextConfig;
