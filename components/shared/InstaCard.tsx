@@ -15,7 +15,7 @@ type InstagramData = {
 };
 
 const instagramData: InstagramData = {
-   avatar_url: "/profiles/insta.jpg",
+   avatar_url: "https://res.cloudinary.com/dsfztnp9x/image/upload/v1739302989/next-portfolio/profiles/pdvlbstwgz2wibdo2ca5.jpg",
    name: "Buddhadeb Koner",
    username: "buddhadeb_koner",
    profile_url: "https://www.instagram.com/buddhadeb_koner/",
