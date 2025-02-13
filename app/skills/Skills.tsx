@@ -2,7 +2,7 @@
 
 import { ParallaxScroll } from '@/components/ui/parallax-scroll'
 
-const page = () => {
+const Skills = () => {
   return (
     <>
       <div className='w-full h-fit fixed overflow-hidden dark:bg-darkprimaryBg bg-lightprimaryBg'>
@@ -12,7 +12,7 @@ const page = () => {
   )
 }
 
-export default page
+export default Skills;
 
 
 const images = [

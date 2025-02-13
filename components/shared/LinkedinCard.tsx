@@ -68,7 +68,7 @@ const LinkedinCard = () => {
                   <h2 className="text-lg font-semibold text-gray-900 dark:text-white">About Me</h2>
                   <p className="text-sm text-gray-700 dark:text-gray-200 mt-1">
                      I&apos;m a passionate web developer focused on building intuitive and high-performance applications.
-                     Specializing in Next.js and Appwrite, I turn complex ideas into seamless digital experiences.
+                     Specializing in Next.js, I turn complex ideas into seamless digital experiences.
                      Always eager to learn, share, and innovate.
                   </p>
                </div>
