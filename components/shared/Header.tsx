@@ -97,7 +97,7 @@ const Header = () => {
             </h1>
 
             {/* Theme Selector Dropdown */}
-            <div className="absolute right-10 top-6 sm:top-8 md:top-10">
+            <div className="absolute right-2 md:right-5 lg:right-10 top-6 sm:top-8 md:top-10">
                <button
                   onClick={() => setIsDropdownOpen(!isDropdownOpen)}
                   className="flex items-center gap-2 text-gray-700 dark:text-gray-300 bg-gray-100 dark:bg-gray-800 px-4 py-2 rounded-lg shadow-md focus:outline-none"

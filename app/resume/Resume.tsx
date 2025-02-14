@@ -10,7 +10,7 @@ const Resume = () => {
                <p><strong>GitHub:</strong>
                   <a
                      className="text-blue-500 dark:text-blue-400"
-                     href="https://github.com" target="_blank">Check profile</a></p>
+                     href="https://github.com/BuddhadebKoner" target="_blank">Check profile</a></p>
                <p><strong>Location:</strong> Abhirampur, Bardhaman, 713144</p>
                <p><strong>Email:</strong> iambuddhadebkoner@gmail.com</p>
             </div>
@@ -73,7 +73,7 @@ const Resume = () => {
                   <strong>CodeComm Coding Club Website : </strong>
                   <a
                      className="text-blue-500 dark:text-blue-400"
-                     href="https://code-com-sepia.vercel.app//" target="_blank">Buddhadeb Koner</a>
+                     href="https://code-com-sepia.vercel.app//" target="_blank">CodeComm</a>
                </p>
                <p className="text-gray-700 dark:text-gray-300">
                   <strong>Social Media App : </strong>
