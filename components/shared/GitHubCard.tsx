@@ -19,13 +19,6 @@ const hardcodedRepos: RepoData[] = [
       forks_count: 0,
    },
    {
-      id: 2,
-      name: "qrAttender.com",
-      html_url: "https://github.com/BuddhadebKoner/qrAttender.com",
-      stargazers_count: 42,
-      forks_count: 15,
-   },
-   {
       id: 3,
       name: "Kochu Media",
       html_url: "https://github.com/BuddhadebKoner/kochugram.com",

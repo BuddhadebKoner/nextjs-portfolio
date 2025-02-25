@@ -19,11 +19,6 @@ const products = [
       thumbnail: "https://res.cloudinary.com/dsfztnp9x/image/upload/v1739302520/next-portfolio/works/jnl2olsam2rep7scmjqa.webp",
    },
    {
-      title: "QR Attender - Attendance Management System",
-      link: "https://qrattender.rajislab.com",
-      thumbnail: "https://res.cloudinary.com/dsfztnp9x/image/upload/v1739302520/next-portfolio/works/lfgfndl2zl1sucyxthm3.webp",
-   },
-   {
       title: "CodeComm - Login Page",
       link: "https://code-com-sepia.vercel.app/",
       thumbnail: "https://res.cloudinary.com/dsfztnp9x/image/upload/v1739302520/next-portfolio/works/zxg2yjd8giobziktv2qy.webp",
@@ -62,11 +57,6 @@ const products = [
       title: "Kochu Media - Explore Page",
       link: "https://kochugram-com.vercel.app",
       thumbnail: "https://res.cloudinary.com/dsfztnp9x/image/upload/v1739302518/next-portfolio/works/h3oalt1fbvrobotvz0gp.webp",
-   },
-   {
-      title: "QR Attender - Smart Attendance System",
-      link: "https://qrattender.rajislab.com/",
-      thumbnail: "https://res.cloudinary.com/dsfztnp9x/image/upload/v1739302518/next-portfolio/works/enyrc44qd9yn4hennjzi.webp",
    },
 ];
 

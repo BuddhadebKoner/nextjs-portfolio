@@ -58,12 +58,6 @@ const Resume = () => {
          content: (
             <div className="space-y-4 text-gray-700 dark:text-gray-300">
                <p className="text-gray-700 dark:text-gray-300">
-                  <strong>Qr Attender Website : </strong>
-                  <a
-                     className="text-blue-500 dark:text-blue-400"
-                     href="https://qrattender.rajislab.com/" target="_blank" >Qr Attender</a>
-               </p>
-               <p className="text-gray-700 dark:text-gray-300">
                   <strong>Saas Website : </strong>
                   <a
                      className="text-blue-500 dark:text-blue-400"
