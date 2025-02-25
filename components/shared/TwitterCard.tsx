@@ -20,7 +20,7 @@ const twitterData: TwitterData = {
    profile_url: 'https://x.com/buddhadeb_koner',
    following: 80,
    followers: 23,
-   bio: 'Programmer 🇮🇳 \nTech Lead at @codecomm_setgoi \n web developer at @rajis_lab',
+   bio: 'Programmer 🇮🇳 \nTech Lead at @codecomm_setgoi \n web developer',
 };
 
 const hardcodedTweets = [

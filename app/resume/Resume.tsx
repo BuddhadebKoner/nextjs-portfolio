@@ -29,20 +29,6 @@ const Resume = () => {
          ),
       },
       {
-         title: "Experience",
-         content: (
-            <div className="space-y-4 text-gray-700 dark:text-gray-300">
-               <article>
-                  <h3 className="font-semibold">Rajis Lab</h3>
-                  <p className="text-sm">January 2024 - Present, Durgapur</p>
-                  <ul className="list-disc list-inside text-sm">
-                     <li>Web devaloper</li>
-                  </ul>
-               </article>
-            </div>
-         ),
-      },
-      {
          title: "Education",
          content: (
             <div className="space-y-4 text-gray-700 dark:text-gray-300">

@@ -36,7 +36,7 @@ const LinkedinCard = () => {
                </h1>
 
                <p className="text-sm text-gray-700 dark:text-gray-200 text-center mt-2">
-                  SDE 0 | Tech Lead at CodeComm <br /> Web Developer at RajisLab <br /> NEXT.js | SETGOI CSE-26
+                  SDE 0 | Tech Lead at CodeComm <br /> Web Developer <br /> NEXT.js | SETGOI CSE-26
                </p>
 
                <div className="flex mt-3 gap-5 text-sm text-gray-600 dark:text-gray-300">
@@ -76,7 +76,7 @@ const LinkedinCard = () => {
                <div>
                   <h2 className="text-lg font-semibold text-gray-900 dark:text-white">Experience</h2>
                   <p className="text-sm text-gray-700 dark:text-gray-200 mt-1">🔹 Tech Lead at CodeComm</p>
-                  <p className="text-sm text-gray-700 dark:text-gray-200">🔹 Web Developer at RajisLab</p>
+                  <p className="text-sm text-gray-700 dark:text-gray-200">🔹 Web Developer</p>
                </div>
 
                <div>
